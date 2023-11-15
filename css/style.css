@@ -10,7 +10,7 @@ body {
 
 .ball {
   width: 100px;
-  height: 100px;
+  height: auto;
   border-radius: 50%;
   background-color: lightcoral;
 
