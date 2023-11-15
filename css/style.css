@@ -1,0 +1,15 @@
+body {
+  background-color: #3a3a3a;
+  color: #fff;
+}
+
+.ball {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: lightcoral;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
