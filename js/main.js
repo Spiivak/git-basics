@@ -1,15 +1,13 @@
 'use strict'
 
-function onBallClick(elBall) {
-    var currentWidth = parseInt(elBall.style.width, 10) || 100
-    var currentHeight = parseInt(elBall.style.height, 10) || 100
+function onBallClick(elBall, maxDiameter, reset) {
+    var currentWidth = elBall.offsetWidth
+    var currentHeight = elBall.offsetHeight
+    // console.log('elBall.offsetWidth', elBall.offsetWidth)
 
-    console.log('currentWidth', currentWidth)
-    console.log('currentHeight', currentHeight)
-
-    if (currentWidth >= 400 && currentHeight >= 400) {
-        elBall.style.width = 100 + 'px'
-        elBall.style.height = 100 + 'px'
+    if (currentWidth >= maxDiameter && currentHeight >= maxDiameter) {
+        elBall.style.width = reset + 'px'
+        elBall.style.height = reset + 'px'
         elBall.style.backgroundColor = 'lightcoral'
 
     } else {
@@ -17,5 +15,7 @@ function onBallClick(elBall) {
         elBall.style.width = newWidth + 'px'
         elBall.style.height = newWidth + 'px'
         elBall.style.backgroundColor = getRandomColor()
+
+        console.log('elBall.offsetWidth', newWidth)
     }
 }

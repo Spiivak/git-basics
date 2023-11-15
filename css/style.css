@@ -24,3 +24,21 @@ body {
   cursor: pointer;
   transition: width 1s, height 1s;
 }
+
+.ball2 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: rgb(173, 240, 128);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 22px;
+  font-weight: bold;
+
+  cursor: pointer;
+  transition: width 1s, height 1s;
+  margin-top: 16px;
+}
